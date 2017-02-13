@@ -1,7 +1,23 @@
 $body-background-colour: #c0deed;
 $body-colour: #000;
 
+$twitter-icon-url: 'http://f.cl.ly/items/453C060h2Z1q0D2P0M16/twitter.png';
+$box-colour: rgba(239, 240, 243, 1);
+$icon-colour: rgba(51, 51, 51, .15);
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400);
 // Fonts style definition
 $base:         'Arial', 'Helvetica', Sans-Serif;
 $font-regular: 'Roboto',Sans-Serif;
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+
+  }
+}
