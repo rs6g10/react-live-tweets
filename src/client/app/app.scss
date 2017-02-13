@@ -1,0 +1,109 @@
+@import '_variables.scss';
+
+body {
+  background: $body-background-colour;
+  color: $body-colour;
+  font-family: $font-regular;
+}
+
+.container {
+  h2 {
+    padding-left: 140px;
+  }
+}
+
+.tweet-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-container-divide {
+  height: 10px;
+  width: 80%;
+  background-color: #a5da95;
+}
+
+.icon {
+  color: rgba(51, 51, 51, .15);
+  font-family: $font-regular;
+}
+
+.bird {
+  font-size: 36px;
+  position: absolute;
+  left: 28px;
+  line-height: 85px;
+  background-image: url('http://f.cl.ly/items/453C060h2Z1q0D2P0M16/twitter.png');
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.box {
+  background: rgba(239, 240, 243, 1);
+  height: 80px;
+  padding-left: 50px;
+  background-image: url('http://f.cl.ly/items/453C060h2Z1q0D2P0M16/twitter.png');
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 25px;
+  z-index: 100;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  width: 80%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+  -webkit-transition: all 0.33s ease;
+  -moz-transition: all 0.33s ease;
+  transition: display 0.5s ease;
+}
+
+.box img {
+  height: 100px;
+  width: 100px;
+}
+
+.box-container {
+  display: flex;
+  transition: display 0.5s ease;
+  margin-top: 5px;
+}
+
+.box-container-panel {
+  flex: 1;
+}
+
+.box-container-panel-user {
+  flex-basis: 100px;
+}
+
+.box-container-panel-text {
+  flex: 5;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+
+  }
+}
+
+.box {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-duration: 1.2s;
+}
+
+
+
+
